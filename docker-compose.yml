@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  app:
+    platform: linux/amd64
+    build:
+      context: .
+    volumes:
+      - '.:/app'
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    command:
+      - /bin/bash
+      - '-c'
+      - sleep 1d
+
+  db:
+    platform: linux/x86_64
+    image: postgres:12.0-alpine
+    volumes:
+      - db_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=menu_user
+      - POSTGRES_PASSWORD=menu_pass
+      - POSTGRES_DB=menu_db
+
+
+volumes:
+  db_data:

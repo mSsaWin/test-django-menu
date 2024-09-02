@@ -1,0 +1,14 @@
+<ul>
+{% for node in menu_tree %}
+    <li>
+        <a href="{{ node.url }}" {% if request.path == node.url %}class="text-danger"{% endif %}>
+            {{ node.name }}
+        </a>
+        {% if node.children and node.is_expanded %}
+            <ul>
+                {% include 'menu/menu.html' with menu_tree=node.children %}
+            </ul>
+        {% endif %}
+    </li>
+{% endfor %}
+</ul>

@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-02 12:13+0000\n"
+"PO-Revision-Date: 2024-09-02 15:13+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.4.4\n"
+
+#: models/menu.py:9 models/menu.py:58
+msgid "Name"
+msgstr "Название"
+
+#: models/menu.py:17
+msgid "Slug"
+msgstr "Синоним"
+
+#: models/menu.py:22 models/menu.py:69
+msgid "Field will be filled automatically if no value is specified."
+msgstr "Поле будет заполнено автоматически, если не задано значение."
+
+#: models/menu.py:26 models/menu.py:27 models/menu.py:41
+msgid "Menu"
+msgstr "Меню"
+
+#: models/menu.py:50
+msgid "Parent"
+msgstr "Родитель"
+
+#: models/menu.py:65
+msgid "Named URL"
+msgstr "Именованный URL"
+
+#: models/menu.py:73
+msgid "Menu Item"
+msgstr "Пункт меню"
+
+#: models/menu.py:74
+msgid "Menu Items"
+msgstr "Пункты меню"
